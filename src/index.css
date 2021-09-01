@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.Home{
+    padding:60px 100px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(196, 224, 233);
+    
+}
+.movie-list {
+    display: flex;
+}
+.Home h2{
+    font-size: 26px;
+    padding-bottom: 30px;
+
+}
+.Home img{
+    padding-right: 20px;
+    width:250px;
+     height:380px;
+}
+.Home h4{
+    width: 240px;
+}
+.Topic{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 120px;
+    background-color: rgb(195, 223, 233);
+    margin-right: 0px;
+}
+.movie-info{
+    padding-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.text{
+    margin-left: 80px;
+    font-size: 20px;
+   
+}
+.Topic img{
+    width: 460px;
+    height: 640px;
+    border-radius: 8px;
+}
+.Topic h1{
+    margin-top: 0;
+    margin-bottom: 55px;
+    color: blue;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+.Topic p{
+    border-bottom: 1px solid blue;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    color: rgb(66, 65, 65);
+}
+.Topic p span{
+    float: right;
+}
+
+.Topic button{
+    width: 150px;
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 20px 30px;
+    background-color: goldenrod;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 300ms;
+    font-weight: bold;
+    overflow: hidden;
+    z-index: 0;
+}
+.Topic button::after{
+    content: "";
+    position: absolute;
+    width: 100%;height: 100%;
+    background-color: rgb(39, 38, 38);
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    z-index: -1;
+    transition: 500ms;
+}
+.Topic button:hover::after{
+    transform: translateX(0%);
+}

@@ -1,0 +1,19 @@
+.Navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background:rgb(2, 2, 114);
+}
+
+.Navbar a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding:20px;
+    text-transform: uppercase;
+}
+.Navbar Link{
+    color: white;
+}
